@@ -1,7 +1,8 @@
 name: cicd-pipeline
 on:
   push:
-    branches:[ main ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -22,7 +23,7 @@ jobs:
         run: npm test
   
   deploy:
-    run-on: ubuntu:latest
+    runs-on: ubuntu:latest
     needs: build
 
     steps:

@@ -9,7 +9,7 @@ app.get('/health', (req,res)=>{
     });
 });
 
-app.listen(5000, ()=>{
+app.listen(5000, ()=>{ //  should be same as container port
     console.log("Server running on port 8080");
 });
 
