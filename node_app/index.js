@@ -12,3 +12,5 @@ app.get('/health', (req,res)=>{
 app.listen(5000, ()=>{
     console.log("Server running on port 8080");
 });
+
+module.exports = app;
